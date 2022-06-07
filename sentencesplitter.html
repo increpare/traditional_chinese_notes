@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script>
+function getText() {
+    var str=document.getElementById("txtArea").value;
+    var already=document.getElementById("alreadydefined").value;
+    var result=[];
+    var lines = str.split("\n");
+    for (var i=0;i<lines.length;i++){
+      var line = lines[i];
+      //trim line
+      line = line.replace(/^\s+|\s+$/g, '');
+      var origline=line;
+      //remove punctuation characters from line
+      line = line.replace(/[^\u4e00-\u9fa5]/g,"");
+      var chars = line.split("");
+      //append chars from array to result
+      for (var j=0;j<chars.length;j++){
+        //if in already
+        var char=chars[j];
+        if (already.indexOf(char)==-1){
+          result.push(char);
+          already=already+char;
+        }
+      }
+      result.push(origline);
+    }
+    var output = document.getElementById("output");
+
+    //remove empty lines from result
+    result=result.filter(function(n){return n!==''});
+    //concatenate result array to string with newlines
+    output.innerText = result.join("\n");
+  }
+</script>
+</head>
+<body>
+  already defined:<br>
+  <textarea rows="5" cols="30" id = "alreadydefined"> </textarea>
+  new text:<br>
+  <textarea rows="5" cols="30" id = "txtArea"> </textarea>
+<br>
+<input type = "button" value="click here" onclick = "getText();" />
+<br>
+<div id="output"></div>
+  </body>
+  </html>
+

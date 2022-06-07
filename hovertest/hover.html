@@ -1,0 +1,526 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+<style>
+
+    @font-face {
+  font-family: mingliu;
+  src: url("simkai.ttf");
+}
+/*
+@font-face {
+  font-family: bitter;
+  src: url("Bitter-Regular.ttf");
+}
+
+@font-face {
+    font-family:garamondbold;
+    src: url("EBGaramond-Bold.ttf");
+}
+
+@font-face {
+    font-family:garamonditalic;
+    src: url("EBGaramond-Italic.ttf");
+}*/
+
+@font-face {
+    font-family:garamondregular;
+    src: url("EBGaramond-Regular.ttf");
+}
+
+@font-face {
+    font-family:bodoni;
+    src: url("Bodoni72.ttc");
+}
+
+html{
+    background-color: #eee;
+}
+body {
+ font-family: arial;
+ font-size: 20px;   
+ color: black;
+ background-color: #eee;
+ margin-left: 150px;
+ margin-right: 150px;
+}
+
+.zeichen{
+font-family:mingliu;
+font-weight:bold;
+font-size:40px;
+}
+
+.zeichenbig{
+font-family:mingliu;
+font-weight:bold;
+font-size:60px;
+}
+
+.latin{
+font-family:garamondregular;
+font-weight:regular;
+font-size:40px;
+}
+
+
+.latinsm{
+font-family:garamondregular;
+font-size:25px;
+}
+
+.kapitel{
+color: gray;
+font-size: 15px;
+float:right;
+}
+
+.etymologie{
+font-style:italic;
+color:gray;
+font-weight:normal;
+}
+
+
+
+#wrapper .text {
+
+/* position:relative; */
+/* bottom:30px; */
+/* left:0px; */
+    opacity:0; /* Completely invisible. */
+    transition:0.3s; /* A 1 second transition. */
+}
+
+#wrapper:hover .text {
+    opacity:1; /* Completely visible. */
+}
+</style>
+</head>
+<body>
+<br><div id="wrapper">
+    <div class="hover zeichen" />子近。</div>
+    <div class="text latinsm">Tsı́ gȷų̀n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子遠。</div>
+    <div class="text latinsm">Tsı́ hȷwón.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />相近。</div>
+    <div class="text latinsm">Sȷāng gȷų̀n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />性相近也。</div>
+    <div class="text latinsm">Sȷèng sȷāng gȷų̀n yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />習相遠也。</div>
+    <div class="text latinsm">Zıp sȷāng hȷwón yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子曰。性相近也。習相遠也。</div>
+    <div class="text latinsm">Tsı́ hȷwot. Sȷèng sȷāng gȷų̀n yáe. Zıp sȷāng hȷwón yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />齊景公問政於孔子。</div>
+    <div class="text latinsm">Dzēȷ kȷáeng kūwng mȷùn ts̯èng 'ȷō khúwng tsı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />孔子對曰。</div>
+    <div class="text latinsm">Khúwng tsı́ twòȷ hȷwot.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />君君。</div>
+    <div class="text latinsm">Kȷūn kȷūn.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />臣臣。</div>
+    <div class="text latinsm">Dz̯ı̄n dz̯ı̄n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />父父。</div>
+    <div class="text latinsm">Bȷú bȷú.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子子。</div>
+    <div class="text latinsm">Tsı́ tsı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />公曰。</div>
+    <div class="text latinsm">Kūwng hȷwot.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />君不君。</div>
+    <div class="text latinsm">Kȷūn pȷūw kȷūn.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />臣不臣。</div>
+    <div class="text latinsm">Dz̯ı̄n pȷūw dz̯ı̄n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />父不父。</div>
+    <div class="text latinsm">Bȷú pȷūw bȷú.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子不子。</div>
+    <div class="text latinsm">Tsı́ pȷūw tsı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />齊景公問政於孔子。孔子對曰。君君。臣臣。父父。子子。公曰。君不君。臣不臣。父不父。子不子。</div>
+    <div class="text latinsm">Dzēȷ kȷáeng kūwng mȷùn ts̯èng 'ȷō khúwng tsı́. Khúwng tsı́ twòȷ hȷwot. Kȷūn kȷūn. Dz̯ı̄n dz̯ı̄n. Bȷú bȷú. Tsı́ tsı́. Kūwng hȷwot. Kȷūn pȷūw kȷūn. Dz̯ı̄n pȷūw dz̯ı̄n. Bȷú pȷūw bȷú. Tsı́ pȷūw tsı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />樊遲問仁。愛人。</div>
+    <div class="text latinsm">Bȷōn ḍı̄ȷ mȷùn n̯ı̄n. 'òȷ n̯ı̄n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />問知。知人。</div>
+    <div class="text latinsm">Mȷùn ṭȷē. Ṭȷē n̯ı̄n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />仁者安仁。知者利仁。</div>
+    <div class="text latinsm">N̯ı̄n ts̯áe 'ān n̯ı̄n. Ṭȷē ts̯áe lı̀ȷ n̯ı̄n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />知者樂水。仁者樂山。</div>
+    <div class="text latinsm">Ṭȷē ts̯áe lak s̯wı́ȷ. N̯ı̄n ts̯áe lak ṣēan.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />誨汝知之乎。</div>
+    <div class="text latinsm">Xwòȷ n̯ó ṭȷē ts̯ı̄ hū.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />知之為知之。</div>
+    <div class="text latinsm">Ṭȷē ts̯ı̄ hȷwē ṭȷē ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不知為不知。</div>
+    <div class="text latinsm">Pȷūw ṭȷē hȷwē pȷūw ṭȷē.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />是知也。</div>
+    <div class="text latinsm">Dz̯é ṭȷē yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子曰。由。誨汝知之乎。知之為知之。不知為不知。是知也。</div>
+    <div class="text latinsm">Tsı́ hȷwot. Yūw. Xwòȷ n̯ó ṭȷē ts̯ı̄ hū. Ṭȷē ts̯ı̄ hȷwē ṭȷē ts̯ı̄. Pȷūw ṭȷē hȷwē pȷūw ṭȷē. Dz̯é ṭȷē yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />知人者知也。</div>
+    <div class="text latinsm">Ṭȷē n̯ı̄n ts̯áe ṭȷē yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />自知明也。</div>
+    <div class="text latinsm">Dzı̀ȷ ṭȷē mȷāeng yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />勝人者有力也。</div>
+    <div class="text latinsm">S̯ı̀ng n̯ı̄n ts̯áe hȷúw lık yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />自勝者强也。</div>
+    <div class="text latinsm">Dzı̀ȷ s̯ı̀ng ts̯áe gȷāng yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />知人者知也。自知明也。勝人者有力也。自勝者强也。</div>
+    <div class="text latinsm">Ṭȷē n̯ı̄n ts̯áe ṭȷē yáe. Dzı̀ȷ ṭȷē mȷāeng yáe. S̯ı̀ng n̯ı̄n ts̯áe hȷúw lık yáe. Dzı̀ȷ s̯ı̀ng ts̯áe gȷāng yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />善哉。</div>
+    <div class="text latinsm">Dz̯én tsōȷ.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />信如君不君。</div>
+    <div class="text latinsm">Sı̀n n̯ō kȷūn pȷūw kȷūn.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />雖有粟。</div>
+    <div class="text latinsm">Swı̄ȷ hȷúw sȷowk.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />吾得而食諸。</div>
+    <div class="text latinsm">Ngū tok n̯ı̄ z̯ık ts̯ō.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />齊景公問政於孔子。孔子對曰。君君。臣臣。父父。子子。善哉。信如君不君。臣不臣。父不父。子不子。雖有粟。吾得而食諸。</div>
+    <div class="text latinsm">Dzēȷ kȷáeng kūwng mȷùn ts̯èng 'ȷō khúwng tsı́. Khúwng tsı́ twòȷ hȷwot. Kȷūn kȷūn. Dz̯ı̄n dz̯ı̄n. Bȷú bȷú. Tsı́ tsı́. Dz̯én tsōȷ. Sı̀n n̯ō kȷūn pȷūw kȷūn. Dz̯ı̄n pȷūw dz̯ı̄n. Bȷú pȷūw bȷú. Tsı́ pȷūw tsı́. Swı̄ȷ hȷúw sȷowk. Ngū tok n̯ı̄ z̯ık ts̯ō.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />知之者不如好之者。</div>
+    <div class="text latinsm">Ṭȷē ts̯ı̄ ts̯áe pȷūw n̯ō xàw ts̯ı̄ ts̯áe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />好之者不如樂之者。</div>
+    <div class="text latinsm">Xàw ts̯ı̄ ts̯áe pȷūw n̯ō lak ts̯ı̄ ts̯áe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子曰。知之者不如好之者。好之者不如樂之者。</div>
+    <div class="text latinsm">Tsı́ hȷwot. Ṭȷē ts̯ı̄ ts̯áe pȷūw n̯ō xàw ts̯ı̄ ts̯áe. Xàw ts̯ı̄ ts̯áe pȷūw n̯ō lak ts̯ı̄ ts̯áe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />道可道也。非恆道也。</div>
+    <div class="text latinsm">Dáw khá dáw yáe. Pȷų̄ȷ hōng dáw yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />名可名也。非恆名也。</div>
+    <div class="text latinsm">Mȷı̄eng khá mȷı̄eng yáe. Pȷų̄ȷ hōng mȷı̄eng yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />無名。萬物之始也。</div>
+    <div class="text latinsm">Mȷū mȷı̄eng. Mȷòn mȷut ts̯ı̄ s̯ı́ yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />有名。萬物之母也。</div>
+    <div class="text latinsm">Hȷúw mȷı̄eng. Mȷòn mȷut ts̯ı̄ múw yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />道可道也。非恆道也。名可名也。非恆名也。無名。萬物之始也。有名。萬物之母也。</div>
+    <div class="text latinsm">Dáw khá dáw yáe. Pȷų̄ȷ hōng dáw yáe. Mȷı̄eng khá mȷı̄eng yáe. Pȷų̄ȷ hōng mȷı̄eng yáe. Mȷū mȷı̄eng. Mȷòn mȷut ts̯ı̄ s̯ı́ yáe. Hȷúw mȷı̄eng. Mȷòn mȷut ts̯ı̄ múw yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子謂公冶長。</div>
+    <div class="text latinsm">Tsı́ hȷwų̀ȷ kūwng yáe ḍȷāng.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />可妻也。</div>
+    <div class="text latinsm">Khá tshèȷ yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />雖在縲絏之中。</div>
+    <div class="text latinsm">Swı̄ȷ dzóȷ lwı̄ȷ sȷet ts̯ı̄ ṭȷūwng.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />非其罪也。</div>
+    <div class="text latinsm">Pȷų̄ȷ gı̄ dzwóȷ yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />以其子妻之。</div>
+    <div class="text latinsm">Yı́ gı̄ tsı́ tshèȷ ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子謂公冶長。可妻也。雖在縲絏之中。非其罪也。以其子妻之。</div>
+    <div class="text latinsm">Tsı́ hȷwų̀ȷ kūwng yáe ḍȷāng. Khá tshèȷ yáe. Swı̄ȷ dzóȷ lwı̄ȷ sȷet ts̯ı̄ ṭȷūwng. Pȷų̄ȷ gı̄ dzwóȷ yáe. Yı́ gı̄ tsı́ tshèȷ ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不亦...乎</div>
+    <div class="text latinsm">Pȷūw yek... Hū</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />士不可以不弘毅。</div>
+    <div class="text latinsm">Dẓı́ pȷūw khá yı́ pȷūw hwōng ngȷų̀ȷ.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />任重而道遠。</div>
+    <div class="text latinsm">N̯ı̀m ḍȷówng n̯ı̄ dáw hȷwón.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />仁以為己任。</div>
+    <div class="text latinsm">N̯ı̄n yı́ hȷwē kı́ n̯ı̀m.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不亦重乎。</div>
+    <div class="text latinsm">Pȷūw yek ḍȷówng hū.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />死而後已。</div>
+    <div class="text latinsm">Sı́ȷ n̯ı̄ húw yı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不亦遠乎。</div>
+    <div class="text latinsm">Pȷūw yek hȷwón hū.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />曾子曰。士不可以不弘毅。任重而道遠。仁以為己任。不亦重乎。死而後已。不亦遠乎。</div>
+    <div class="text latinsm">Tsōng tsı́ hȷwot. Dẓı́ pȷūw khá yı́ pȷūw hwōng ngȷų̀ȷ. N̯ı̀m ḍȷówng n̯ı̄ dáw hȷwón. N̯ı̄n yı́ hȷwē kı́ n̯ı̀m. Pȷūw yek ḍȷówng hū. Sı́ȷ n̯ı̄ húw yı́. Pȷūw yek hȷwón hū.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />富與貴。</div>
+    <div class="text latinsm">Pȷùw yó kȷwų̀ȷ.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />是人之所欲也。</div>
+    <div class="text latinsm">Dz̯é n̯ı̄n ts̯ı̄ ṣȷó yowk yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不以其道得之。不處也。</div>
+    <div class="text latinsm">Pȷūw yı́ gı̄ dáw tok ts̯ı̄. Pȷūw ts̯hó yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不處也。</div>
+    <div class="text latinsm">Pȷūw ts̯hó yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />貧與賤。</div>
+    <div class="text latinsm">Bı̄n yó dzȷèn.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />是人之所惡也。</div>
+    <div class="text latinsm">Dz̯é n̯ı̄n ts̯ı̄ ṣȷó 'ù yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不以其道得之。不去也。</div>
+    <div class="text latinsm">Pȷūw yı́ gı̄ dáw tok ts̯ı̄. Pȷūw khȷò yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子曰。富與貴。是人之所欲也。不以其道得之。不處也。貧與賤。是人之所惡也。不以其道得之。不去也。</div>
+    <div class="text latinsm">Tsı́ hȷwot. Pȷùw yó kȷwų̀ȷ. Dz̯é n̯ı̄n ts̯ı̄ ṣȷó yowk yáe. Pȷūw yı́ gı̄ dáw tok ts̯ı̄. Pȷūw ts̯hó yáe. Bı̄n yó dzȷèn. Dz̯é n̯ı̄n ts̯ı̄ ṣȷó 'ù yáe. Pȷūw yı́ gı̄ dáw tok ts̯ı̄. Pȷūw khȷò yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />孔子弟子。姓端木。名賜。字子貢。</div>
+    <div class="text latinsm">Khúwng tsı́ déȷ tsı́. Sȷèng twān muwk. Mȷı̄eng sȷè. Dzı̀ tsı́ kùwng.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />其...乎</div>
+    <div class="text latinsm">Gı̄... Hū</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />曾子。孔子弟子。名參。字子輿。</div>
+    <div class="text latinsm">Tsōng tsı́. Khúwng tsı́ déȷ tsı́. Mȷı̄eng ṣı̄m. Dzı̀ tsı́ yō.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />而已矣</div>
+    <div class="text latinsm">n̯ı̄ yı́ hı́</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />賜也。</div>
+    <div class="text latinsm">Sȷè yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />汝以予為多學而識之者與。</div>
+    <div class="text latinsm">N̯ó yı́ yō hȷwē tā haewk n̯ı̄ ts̯ı̀ ts̯ı̄ ts̯áe yō.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />對曰。然。非與。</div>
+    <div class="text latinsm">Twòȷ hȷwot. N̯ēn. Pȷų̄ȷ yō.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />予一以貫之。</div>
+    <div class="text latinsm">Yō 'ȷıt yı́ kwàn ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子貢問曰。</div>
+    <div class="text latinsm">Tsı́ kùwng mȷùn hȷwot.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />有一言而可以終身行之者乎。</div>
+    <div class="text latinsm">Hȷúw 'ȷıt ngȷōn n̯ı̄ khá yı́ ts̯ūwng s̯ı̄n hāeng ts̯ı̄ ts̯áe hū.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />其恕乎。</div>
+    <div class="text latinsm">Gı̄ s̯ò hū.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />己所不欲，勿施於人。</div>
+    <div class="text latinsm">Kı́ ṣȷó pȷūw yowk , mȷut s̯ē 'ȷō n̯ı̄n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />參乎。</div>
+    <div class="text latinsm">Ṣı̄m hū.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />吾道一以貫之。</div>
+    <div class="text latinsm">Ngū dáw 'ȷıt yı́ kwàn ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />曾子曰。</div>
+    <div class="text latinsm">Tsōng tsı́ hȷwot.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />唯。子出。</div>
+    <div class="text latinsm">Ywı̄ȷ. Tsı́ ts̯hwıt.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />門人問曰。</div>
+    <div class="text latinsm">Mwōn n̯ı̄n mȷùn hȷwot.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />何謂也。</div>
+    <div class="text latinsm">Hā hȷwų̀ȷ yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />夫子之道。忠恕而已矣。</div>
+    <div class="text latinsm">Pȷū tsı́ ts̯ı̄ dáw. Ṭȷūwng s̯ò n̯ı̄ yı́ hı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子曰。賜也。汝以予為多學而識之者與。對曰。然。非與。曰非也。予一以貫之。</div>
+    <div class="text latinsm">Tsı́ hȷwot. Sȷè yáe. N̯ó yı́ yō hȷwē tā haewk n̯ı̄ ts̯ı̀ ts̯ı̄ ts̯áe yō. Twòȷ hȷwot. N̯ēn. Pȷų̄ȷ yō. Hȷwot pȷų̄ȷ yáe. Yō 'ȷıt yı́ kwàn ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子貢問曰。有一言而可以終身行之者乎。子曰。其恕乎。己所不欲，勿施於人。</div>
+    <div class="text latinsm">Tsı́ kùwng mȷùn hȷwot. Hȷúw 'ȷıt ngȷōn n̯ı̄ khá yı́ ts̯ūwng s̯ı̄n hāeng ts̯ı̄ ts̯áe hū. Tsı́ hȷwot. Gı̄ s̯ò hū. Kı́ ṣȷó pȷūw yowk , mȷut s̯ē 'ȷō n̯ı̄n.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子曰。參乎。吾道一以貫之。曾子曰。唯。子出。門人問曰。何謂也。曾子曰。夫子之道。忠恕而已矣。</div>
+    <div class="text latinsm">Tsı́ hȷwot. Ṣı̄m hū. Ngū dáw 'ȷıt yı́ kwàn ts̯ı̄. Tsōng tsı́ hȷwot. Ywı̄ȷ. Tsı́ ts̯hwıt. Mwōn n̯ı̄n mȷùn hȷwot. Hā hȷwų̀ȷ yáe. Tsōng tsı́ hȷwot. Pȷū tsı́ ts̯ı̄ dáw. Ṭȷūwng s̯ò n̯ı̄ yı́ hı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />夫子之文章。</div>
+    <div class="text latinsm">Pȷū tsı́ ts̯ı̄ mȷūn ts̯āng.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />可得而聞也。</div>
+    <div class="text latinsm">Khá tok n̯ı̄ mȷūn yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />夫子之言性與天道。</div>
+    <div class="text latinsm">Pȷū tsı́ ts̯ı̄ ngȷōn sȷèng yó thēn dáw.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不可得而聞也。</div>
+    <div class="text latinsm">Pȷūw khá tok n̯ı̄ mȷūn yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />德之見乎外者。威儀文辭皆是也。</div>
+    <div class="text latinsm">Tok ts̯ı̄ hèn hū ngwàȷ ts̯áe. 'ȷwų̄ȷ ngȷē mȷūn zı̄ kēaȷ dz̯é yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />性者。人所受之天理。</div>
+    <div class="text latinsm">Sȷèng ts̯áe. N̯ı̄n ṣȷó dz̯úw ts̯ı̄ thēn lı́</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />言夫子之文章。</div>
+    <div class="text latinsm">ngȷōn pȷū tsı́ ts̯ı̄ mȷūn ts̯āng</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />日見乎外。</div>
+    <div class="text latinsm">n̯ıt hèn hū ngwàȷ</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />至於性與天道。則夫子罕言之。</div>
+    <div class="text latinsm">Ts̯ı̀ȷ 'ȷō sȷèng yó thēn dáw. Tsok pȷū tsı́ xán ngȷōn ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />莊子與惠子遊於濠梁之上。</div>
+    <div class="text latinsm">Tṣȷāng tsı́ yó hwèȷ tsı́ yūw 'ȷō hāo lȷāng ts̯ı̄ dz̯àng.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />鯈魚出遊從容。是魚樂也。</div>
+    <div class="text latinsm">Dēw ngȷō ts̯hwıt yūw dzȷōwng yōwng. Dz̯é ngȷō lak yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子非魚。安知魚之樂。</div>
+    <div class="text latinsm">Tsı́ pȷų̄ȷ ngȷō. 'ān ṭȷē ngȷō ts̯ı̄ lak.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子非我。安知我不知魚之樂。</div>
+    <div class="text latinsm">Tsı́ pȷų̄ȷ ngá. 'ān ṭȷē ngá pȷūw ṭȷē ngȷō ts̯ı̄ lak.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />我非子。固不知子矣。</div>
+    <div class="text latinsm">Ngá pȷų̄ȷ tsı́. Kù pȷūw ṭȷē tsı́ hı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />子固非魚也。子之不知魚之樂全矣。</div>
+    <div class="text latinsm">Tsı́ kù pȷų̄ȷ ngȷō yáe. Tsı́ ts̯ı̄ pȷūw ṭȷē ngȷō ts̯ı̄ lak dzȷwēn hı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />請循其本。</div>
+    <div class="text latinsm">Tshȷéng zwı̄n gı̄ pwón.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />汝安知魚樂云者。</div>
+    <div class="text latinsm">N̯ó 'ān ṭȷē ngȷō lak hȷūn ts̯áe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />既已知吾知之而問我。我知之濠上也。</div>
+    <div class="text latinsm">Kȷų̀ȷ yı́ ṭȷē ngū ṭȷē ts̯ı̄ n̯ı̄ mȷùn ngá. Ngá ṭȷē ts̯ı̄ hāo dz̯àng yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />床前明月光</div>
+    <div class="text latinsm">dẓȷāng dzēn mȷāeng ngȷwot kwāng</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />疑是地上霜</div>
+    <div class="text latinsm">ngı̄ dz̯é dı̀ȷ dz̯àng ṣȷāng</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />舉頭望明月</div>
+    <div class="text latinsm">kȷó dūw mȷàng mȷāeng ngȷwot</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />低頭思故鄉</div>
+    <div class="text latinsm">tēȷ dūw sı̄ kù xȷāng</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />處世若大夢</div>
+    <div class="text latinsm">ts̯hó s̯èȷ n̯ak dà mȷùwng</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />胡為勞其生</div>
+    <div class="text latinsm">hū hȷwē lāw gı̄ ṣāeng</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />所以終日醉</div>
+    <div class="text latinsm">ṣȷó yı́ ts̯ūwng n̯ıt tswı̀ȷ</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />頹然臥前楹</div>
+    <div class="text latinsm">dwōȷ n̯ēn ngwà dzēn yēng</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />孟子曰。</div>
+    <div class="text latinsm">Màeng tsı́ hȷwot.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />所以謂人皆有不忍人之心者。</div>
+    <div class="text latinsm">Ṣȷó yı́ hȷwų̀ȷ n̯ı̄n kēaȷ hȷúw pȷūw n̯ı́n n̯ı̄n ts̯ı̄ sı̄m ts̯áe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />今人乍見孺子將入於井。</div>
+    <div class="text latinsm">Kı̄m n̯ı̄n dẓàe hèn n̯ù tsı́ tsȷāng n̯ıp 'ȷō tsȷéng.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />皆有怵惕惻隱之心。</div>
+    <div class="text latinsm">Kēaȷ hȷúw ṭhwıt thek tṣhık 'ȷų́n ts̯ı̄ sı̄m.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />無惻隱之心。</div>
+    <div class="text latinsm">Mȷū tṣhık 'ȷų́n ts̯ı̄ sı̄m.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />非人也。</div>
+    <div class="text latinsm">Pȷų̄ȷ n̯ı̄n yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />惻隱之心。</div>
+    <div class="text latinsm">Tṣhık 'ȷų́n ts̯ı̄ sı̄m.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />仁之端也。</div>
+    <div class="text latinsm">N̯ı̄n ts̯ı̄ twān yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />苟能充之。</div>
+    <div class="text latinsm">Kúw nōng ts̯hūwng ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />足以保四海。</div>
+    <div class="text latinsm">Tsȷowk yı́ páw sı̀ȷ xóȷ.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />苟不充之。</div>
+    <div class="text latinsm">Kúw pȷūw ts̯hūwng ts̯ı̄.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不足以事父母。</div>
+    <div class="text latinsm">Pȷūw tsȷowk yı́ dẓı̀ bȷú múw.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />盡信書。</div>
+    <div class="text latinsm">Dzı́n sı̀n s̯ō.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />則不如無書。</div>
+    <div class="text latinsm">Tsok pȷūw n̯ō mȷū s̯ō.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />姓莊。字休。</div>
+    <div class="text latinsm">Sȷèng tṣȷāng. Dzı̀ xȷūw.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />昔者莊周夢為胡蝶。</div>
+    <div class="text latinsm">Sȷek ts̯áe tṣȷāng ts̯ūw mȷùwng hȷwē hū dep.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />栩栩然胡蝶也。</div>
+    <div class="text latinsm">Xȷú xȷú n̯ēn hū dep yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />自喻適志與。</div>
+    <div class="text latinsm">Dzı̀ȷ yù s̯ek ts̯ı̀ yó.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不知周也。</div>
+    <div class="text latinsm">Pȷūw ṭȷē ts̯ūw yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />俄然覺。</div>
+    <div class="text latinsm">Ngā n̯ēn kaewk.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />則蘧蘧然周也。</div>
+    <div class="text latinsm">Tsok gȷō gȷō n̯ēn ts̯ūw yáe.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />不知周之夢為胡蝶與。</div>
+    <div class="text latinsm">Pȷūw ṭȷē ts̯ūw ts̯ı̄ mȷùwng hȷwē hū dep yó.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />胡蝶之夢為周與。</div>
+    <div class="text latinsm">Hū dep ts̯ı̄ mȷùwng hȷwē ts̯ūw yó.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />周與胡蝶。</div>
+    <div class="text latinsm">Ts̯ūw yó hū dep.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />則必有分矣。</div>
+    <div class="text latinsm">Tsok pȷıt hȷúw pȷūn hı́.</div>
+</div><br><div id="wrapper">
+    <div class="hover zeichen" />此之謂物化。</div>
+    <div class="text latinsm">Tshȷé ts̯ı̄ hȷwų̀ȷ mȷut xwàe.</div>
+</div>
+</body>
+</html>
